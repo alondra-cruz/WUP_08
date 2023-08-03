@@ -36,5 +36,76 @@ plot(LENGTH~HEADLEN,data=bears)
 abline(simp)
 summary.lm(simp)
 ```
+The adjusted r square for head length is 0.8434
+
+
+```{r}
+simp <- lm(LENGTH~HEADWTH,data=bears)
+plot(LENGTH~HEADWTH,data=bears)
+abline(simp)
+summary.lm(simp)
+```
+The adjusted r square for head width is 0.5321 
+
+```{r}
+simp <- lm(LENGTH~AGE,data=bears)
+plot(LENGTH~AGE,data=bears)
+abline(simp)
+summary.lm(simp)
+```
+The adjusted r squared is 0.5073
+
+```{r}
+simp <- lm(LENGTH~CHEST,data=bears)
+plot(LENGTH~CHEST,data=bears)
+abline(simp)
+summary.lm(simp)
+```
+The adjusted r square 0.7869
+
+```{r}
+simp <- lm(LENGTH~WEIGHT,data=bears)
+plot(LENGTH~WEIGHT,data=bears)
+abline(simp)
+summary.lm(simp)
+```
+The adjusted r square 0.7423
+
+### Conclusion
+We had to compare all the models and order them worst to best based off their value of Adjusted-R Squared. Based of the list of Adjusted R- Squared values underneath, the best is head length. 
+
+Age:           0.5073
+
+Head Width:    0.5321
+
+Weight:        0.7423
+
+Neck:          0.7476
+
+Chest:         0.7869
+
+Head Length:   0.8434
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
